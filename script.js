@@ -1,22 +1,22 @@
-// --- CONFIGURATION --- //
-const CONFIG = {
-    // Paste your new PDF URL here
-    pdfUrl: "https://drive.google.com/file/d/1t13J6hgK7N2aqs3mQdL_zyDRYo8ggohx/view?usp=sharing"
+// Google Drive FILE ID
+const FILE_ID = "1t13J6hgK7N2aqs3mQdL_zyDRYo8ggohx";
+
+// Google Drive URLs (correct & allowed)
+const PREVIEW_URL = `https://drive.google.com/file/d/${FILE_ID}/preview`;
+const DOWNLOAD_URL = `https://drive.google.com/uc?export=download&id=${FILE_ID}`;
+
+// Load certificate preview on page load
+window.onload = function () {
+    const iframe = document.getElementById("cert-preview");
+    iframe.src = PREVIEW_URL;
 };
 
-// --- LOGIC (Do not edit below) --- //
-
-// 1. Setup Download Button
+// Download certificate
 function downloadCertificate() {
-    window.open(CONFIG.pdfUrl, "_blank");
+    const link = document.createElement("a");
+    link.href = DOWNLOAD_URL;
+    link.target = "_blank";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 }
-
-// 2. Setup PDF Viewer (Google Docs Viewer)
-window.addEventListener('DOMContentLoaded', () => {
-    const iframe = document.getElementById('cert-preview');
-    if (iframe) {
-        // Encode the URL for Google Viewer
-        const encodedUrl = encodeURIComponent(CONFIG.pdfUrl);
-        iframe.src = `https://docs.google.com/gview?url=${encodedUrl}&embedded=true`;
-    }
-});
