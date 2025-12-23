@@ -1,7 +1,7 @@
 // --- CONFIGURATION --- //
 const CONFIG = {
     // Paste your new PDF URL here
-    pdfUrl: "https://jyesta-lms-certificates.s3.ap-south-1.amazonaws.com/certificates/internship/JC-20250913-MBK08BBW.pdf"
+    pdfUrl: "https://drive.google.com/file/d/1t13J6hgK7N2aqs3mQdL_zyDRYo8ggohx/view?usp=sharing"
 };
 
 // --- LOGIC (Do not edit below) --- //
