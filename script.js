@@ -1,7 +1,7 @@
 // Google Drive FILE ID
-const FILE_ID = "1t13J6hgK7N2aqs3mQdL_zyDRYo8ggohx";
+const FILE_ID = "1C6QSJkvwT4-Nf4IO3DDj9WNOPRv8YAwS";
 
-// Google Drive URLs (correct & allowed)
+// Google Drive URLs
 const PREVIEW_URL = `https://drive.google.com/file/d/${FILE_ID}/preview`;
 const DOWNLOAD_URL = `https://drive.google.com/uc?export=download&id=${FILE_ID}`;
 
