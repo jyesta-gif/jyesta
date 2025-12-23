@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Certificate Verification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Success Banner -->
+        <!-- Success Banner -->
+        <div class="status-banner">
+            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 13l4 4L19 7"></path>
+            </svg>
+            Certificate Genuine • Certificate ID: JC-20250913-MBK08BBW
+        </div>
+
+        <!-- Details Card -->
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Details</h2>
+                <span class="badge">INTERNSHIP</span>
+            </div>
+
+            <div class="details-grid">
+                <div class="detail-item">
+                    <span class="detail-label">Learner</span>
+                    <span class="detail-value">Abhishek Kardam</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Programme</span>
+                    <span class="detail-value">ARTIFICIAL INTELLIGENCE</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Type</span>
+                    <span class="detail-value">INTERNSHIP</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Issued On</span>
+                    <span class="detail-value">13-09-2025</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Valid From</span>
+                    <span class="detail-value">12-07-2025</span>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="download-btn" onclick="downloadCertificate()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Download Certificate
+        </button>
+
+        <!-- Certificate Preview/Embed -->
+        <iframe id="cert-preview" class="cert-preview" title="Certificate Preview">
+        </iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
